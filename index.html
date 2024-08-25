@@ -1,0 +1,84 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion's TwitchBot Controller</title>
+    <style>
+        body {
+            font-family: Roboto; 
+            margin: 10px;
+            background-color: #222;
+            color: #fff;
+        }
+        image {
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            padding-top: 5px;
+            src: 'assets/favicon.ico';
+        }
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        #startBtn {
+            background-color: rgb(43, 83, 50);
+            color: #fff;
+            align-items: center;
+            align-content: center;
+            display: inline-block;
+            text-align: center;
+            width: 120px;
+            margin: 3px;
+            padding-top: auto;
+            font-weight: bold;
+        }
+        #stopBtn {
+            background-color: rgb(39, 9, 9);
+            color: #fff;
+            align-items: center;
+            align-content: center;
+            display: inline-block;
+            text-align: center;
+            width: 120px;
+            margin: 3px;
+            padding-top: auto;
+        }
+        #output {
+            font-family: Roboto;
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            height: calc(100vh - 250px);
+            overflow-y:auto;
+            margin-top: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            word-wrap: break-word; /* Added line */
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <img id="image" src="assets/favicon.ico" style="padding: 10px 0;">
+    <h1>Twitch Bot Controller</h1>
+    
+        <button id="startBtn">Restart</button>
+        <button id="stopBtn">Stop</button>
+    </center>
+    <div id="output"></div>
+    <script src="renderer.js"></script>
+</body>
+</html>
