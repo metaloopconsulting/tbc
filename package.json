@@ -13,9 +13,7 @@
   "dependencies": {
     "graphql": "^16.9.0",
     "sqlite3": "^5.1.7",
-    "tmi.js": "^1.8.5",
-    "electron": "^31.4.0"
-    
+    "tmi.js": "^1.8.5"
   },
   "devDependencies": {
     "electron": "^31.4.0"
